@@ -1,0 +1,390 @@
+body {
+  font-family: "Space Mono", Arial, serif;
+  font-size: 16px;
+  color: #4d4d4d;
+}
+@font-face {
+  font-family: "Annabelle";
+  src: url("../fonts/Annabelle.eot");
+  src: url("../fonts/Annabelle.eot?#iefix") format("embeded-opentype"), url("../fonts/Annabelle.woff") format("woff"), url("../fonts/Annabelle.ttf") format("truetype"), url("../fonts/Annabelle.svg#Sri-TSCRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.up {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  opacity: .8;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  position: fixed;
+  right: 40px;
+  top: auto;
+  bottom: 40px;
+  z-index: 999;
+  transition: all 1s;
+  display: none;
+}
+.fixed-bar {
+  z-index: 999;
+  position: fixed;
+  width: 30px;
+  top: 35%;
+  right: left;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.fixed-bar .bar-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px #fff solid;
+  margin: 20px 0;
+  box-shadow: 0 0 5px 0 #fff;
+  cursor: pointer;
+}
+.fixed-bar .active {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+.part {
+  min-height: 400px !important;
+}
+.part1 {
+  position: relative;
+}
+.part1 .layer {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(255, 144, 0, 0.9);
+}
+.part1 .wrap {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  background-size: cover;
+  background: url("../imgs/cover_bg_3.jpg") no-repeat -200px;
+}
+.part1 .container {
+  margin-left: 10%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+}
+.part1 .container .photo {
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: url("../imgs/photo.jpg") no-repeat center center;
+  background-size: cover;
+}
+.part1 .container .h1 {
+  text-align: center;
+  transform: rotate(-4deg);
+  transform: -ms-rotate(-4deg);
+  transform: -moz-rotate(-4deg);
+  transform: -webkit-rotate(-4deg);
+  transform: -o-rotate(-4deg);
+}
+.part1 .container .h1 .name {
+  font-family: "Annabelle", Arial, serif;
+  font-style: italic;
+  letter-spacing: .5em;
+  text-align: center;
+  padding: 0 10px;
+}
+.part1 .container .job {
+  font-family: "Annabelle", Arial, serif;
+  padding: 30px;
+  text-indent: 2em;
+  text-align: center;
+  letter-spacing: .2em;
+}
+.part1 .container .community {
+  margin: 0 auto;
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+}
+.part1 .container .community .item {
+  color: #fff;
+  width: 40px;
+  height: 20px;
+}
+.part2 .wrap {
+  width: 96%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.part2 .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+  zoom: 1;
+}
+.part2 .h1 {
+  word-spacing: .5em;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0;
+}
+.part2 .left {
+  width: 40%;
+  float: left;
+}
+.part2 .left .first-block {
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.part2 .left .second-block {
+  word-break: break-all;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+.part2 .right {
+  float: left;
+  width: 60%;
+}
+.part2 .right .title {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.part2 .right .content {
+  overflow: scroll;
+  max-height: 400px;
+}
+.part2 .right .content ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.part2 .right .content li {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.part3 {
+  position: relative;
+  background-color: rgba(255, 144, 0, 0.9);
+}
+.part3 .vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  border: solid #E6E6E6 1px;
+  left: 50%;
+  top: 48px;
+  z-index: 1;
+}
+.part3 .wrap {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 2;
+}
+.part3 .wrap .row {
+  margin: 0;
+  position: relative;
+  padding-bottom: 8px;
+}
+.part3 .wrap .wrap-caption {
+  margin: 15px 0 ;
+  text-align: center;
+}
+.part3 .wrap .caption {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  font-size: 18px;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-weight: bold;
+}
+.part3 .wrap .item {
+  width: 45%;
+  background-color: #efefef;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.part3 .wrap .item .job-title,
+.part3 .wrap .item .school-name {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 10px;
+}
+.part3 .wrap .work-experience .info {
+  padding: 0 10px 0px;
+  margin-bottom: 10px;
+  color: #bfbfbf;
+  font-weight: normal;
+  font-size: 14px;
+}
+.part3 .wrap .work-experience .work-subscribe {
+  padding: 0 10px 10px;
+  line-height: 1.6em;
+  color: #4d4d4d;
+  font-size: 14px;
+}
+.part3 .wrap .work-experience .experience-logo {
+  color: rgba(255, 144, 0, 0.9);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -24px;
+  top: 50%;
+  margin-top: -24px;
+}
+.part3 .wrap .work-experience .left-item {
+  float: left;
+}
+.part3 .wrap .work-experience .right-item {
+  float: right;
+}
+.part4 {
+  position: relative;
+}
+.part4 .vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  border: solid #E6E6E6 1px;
+  left: 50%;
+  top: 48px;
+  z-index: 1;
+}
+.part4 .wrap {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 2;
+}
+.part4 .wrap .row {
+  margin: 0;
+  position: relative;
+  padding-bottom: 8px ;
+}
+.part4 .wrap .wrap-caption {
+  margin: 15px 0 ;
+  text-align: center;
+}
+.part4 .wrap .caption {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  font-size: 18px;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-weight: bold;
+}
+.part4 .wrap .item {
+  width: 40%;
+  background-color: #efefef;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.part4 .wrap .item .job-title,
+.part4 .wrap .item .school-name {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 10px;
+}
+.part4 .wrap .education .info {
+  padding: 0 10px 0px;
+  margin-bottom: 10px;
+  color: #bfbfbf;
+  font-weight: normal;
+  font-size: 14px;
+}
+.part4 .wrap .education .education-subscribe {
+  padding: 0 10px 10px;
+  line-height: 1.6em;
+  color: #4d4d4d;
+  font-size: 14px;
+}
+.part4 .wrap .education .education-logo {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 144, 0, 0.9);
+  left: 50%;
+  margin-left: -24px;
+  top: 50%;
+  margin-top: -24px;
+}
+.part4 .wrap .education .left-item {
+  float: left;
+}
+.part4 .wrap .education .right-item {
+  float: right;
+}
+.part5 {
+  background-color: rgba(255, 144, 0, 0.9);
+}
+.part5 .skills-title {
+  font-size: 40px;
+  line-height: 1.5em;
+  color: #fff;
+  padding: 30px;
+  letter-spacing: .3em;
+  font-weight: lighter;
+  margin: 20px 0;
+  text-align: center;
+}
+.part5 .col {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.part5 .col .chart {
+  position: relative;
+}
+.part5 .col .chart canvas {
+  display: block;
+  margin: 0 auto !important;
+}
+.part5 .col .chart .circle-content {
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.part5 .col .chart .circle-content .circle-title,
+.part5 .col .chart .circle-content .skill-value {
+  text-align: center;
+  padding-bottom: 10px;
+}

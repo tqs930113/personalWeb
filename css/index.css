@@ -1,0 +1,244 @@
+body {
+  background-color: #fafafa;
+}
+.header {
+  background-color: #b3c6d6;
+  font-size: 14px;
+  font-family: "Myriad Pro Regular";
+  height: 80px;
+}
+.header .container-fluid {
+  height: 80px;
+  line-height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+.header .container-fluid .logo {
+  float: left;
+  width: 130px;
+  margin: 0 10px;
+}
+.header .container-fluid .nav {
+  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+.header .container-fluid .nav__item {
+  position: relative;
+}
+.header .container-fluid .nav__item :hover {
+  background-color: #12a3d6;
+  color: #c5f4ff;
+  height: 80px;
+  border-bottom: 10px #0080b7 solid;
+  box-sizing: border-box;
+}
+.header .container-fluid .nav__item :hover::after {
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -8px;
+  border-bottom: 8px solid #0080b7;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  display: block;
+}
+.header .container-fluid .nav__item a {
+  display: inline-block;
+  color: #a1a7ab;
+  padding: 0 15px;
+  text-decoration: none;
+}
+.header .container-fluid .right {
+  float: right;
+}
+.header .container-fluid .right .account {
+  width: 80px;
+  float: right;
+}
+.header .container-fluid .right .account__btn {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f98561;
+  color: #c5f4ff;
+}
+.header .container-fluid .right .search {
+  float: right;
+  padding: 0 30px;
+}
+.header .container-fluid .right .search span {
+  color: #a1a7ab;
+  display: inline-block;
+  float: left;
+  padding: 0 5px;
+  text-align: center;
+}
+.header .container-fluid .right .search__btn {
+  float: left;
+  width: 40px;
+  height: 80px;
+  line-height: 80px;
+  background-size: 10px auto;
+  background: url("../imgs/search.gif") no-repeat center center;
+}
+.banner {
+  border-top: 1px solid #7b8083;
+  border-bottom: px solid #7b8083;
+  background: url("../imgs/banner.png") no-repeat center center;
+}
+.banner .container-fluid {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+.banner .container-fluid .row {
+  padding: 60px ;
+}
+.banner .photo {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  border-radius: 50px;
+}
+.banner .resume {
+  padding: 20px 0;
+  color: #fff;
+  margin: 0 auto;
+  width: 100px;
+}
+.banner .resume__abstract {
+  padding-bottom: 20px;
+}
+.project {
+  background: url("../imgs/bg.jpg") no-repeat center bottom;
+}
+.project__caption {
+  color: #2190c1;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0;
+}
+.project__nav {
+  border-top: 1px solid #b3d5e4;
+  border-bottom: 1px solid #b3d5e4;
+  width: 100%;
+  padding: 10px 0;
+}
+.project__nav .nav-tabs {
+  border-bottom: 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+.project__nav .nav-tabs > li.active > a,
+.project__nav .nav-tabs > li.active > a:focus,
+.project__nav .nav-tabs > li.active > a:hover {
+  color: #c5f4ff;
+  background-color: #12a3d6;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.project__nav .nav-tabs > li {
+  margin: 0  35px;
+}
+.project__nav .nav-tabs > li > a:hover {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.project .container-fluid {
+  width: 80%;
+}
+.project .container-fluid #lesson .container {
+  width: 100%;
+}
+.project .container-fluid #lesson .recommend-lesson {
+  height: 360px;
+  position: relative;
+}
+.project .container-fluid #lesson .recommend-lesson dl {
+  margin: 15px 0;
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
+  border-radius: 5px;
+}
+.project .container-fluid #lesson .recommend-lesson dl:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-title {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px ;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-title a {
+  text-decoration: none;
+  color: #343333;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-title a:hover {
+  color: #5d5c5c;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-body {
+  font-size: 13px;
+  color: #999;
+  padding: 10px;
+  max-height: 95px;
+  overflow: hidden;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-footer {
+  padding: 0 10px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 13px;
+  color: #ccc;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+.project .container-fluid #lesson .recommend-lesson dl .card-footer a:hover {
+  color: #adaaaa;
+}
+.project .container-fluid #lesson .recommend-lesson img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+  height: 150px;
+}
+.project .container-fluid #about article {
+  width: 70%;
+  margin: 50px auto;
+}
+.project .container-fluid #about article h3 {
+  color: #555;
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+.project .container-fluid #about article p {
+  color: #aaa;
+  text-indent: 2em;
+  font-size: 16px;
+  letter-spacing: .2em;
+  line-height: 1.5em;
+}
+.footer {
+  background-color: #b3c6d6;
+}
+.footer .copyright {
+  padding: 20px 40px;
+  margin: 0;
+  color: #555;
+}
+@media screen and (max-width: 768px) {
+  .project .container-fluid {
+    width: 90%;
+  }
+}
